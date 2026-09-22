@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Club Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>BCE Club Portal</h1>
+    <p>Discover clubs, activities, events and achievements</p>
+</header>
+
+<nav>
+    <a href="#clubs">Clubs</a>
+    <a href="#events">Events</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#register">Registration</a>
+</nav>
+
+<main>
+    <section id="clubs">
+        <h2>BCE Clubs</h2>
+        <div id="clubList" class="club-container"></div>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div id="eventList"></div>
+    </section>
+
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <p class="section-description">Our clubs give students a place to learn together, build practical skills, and celebrate their creativity through projects, competitions, and campus events.</p>
+        <div id="achievementList" class="achievement-container"></div>
+        <div class="achievement-pdfs">
+            <a href="Achievement%201.pdf" target="_blank" rel="noopener">Achievement 1 (PDF)</a>
+            <a href="Achievement%202.pdf" target="_blank" rel="noopener">Achievement 2 (PDF)</a>
+        </div>
+    </section>
+
+    <section id="register">
+        <h2>Membership Registration</h2>
+
+        <form action="https://formspree.io/f/xwlkgzpl" method="POST">
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Select Club</label>
+            <select name="club" required>
+                <option value="">Choose a club</option>
+                <option value="Coding Club">Coding Club</option>
+                <option value="Robotics Club">Robotics Club</option>
+                <option value="Photography Club">Photography Club</option>
+                <option value="Cultural Club">Cultural Club</option>
+            </select>
+
+            <label>Message / Description</label>
+            <textarea name="message"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>College Club Portal © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
